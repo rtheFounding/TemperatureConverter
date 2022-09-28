@@ -1,0 +1,13 @@
+.navbar-dark .nav-item .nav-link {
+    color: #fff;
+  }
+  
+  .navbar-dark .nav-item .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
+  p {
+    color: rgb(3, 3, 3);
+    text-indent: 30px;
+    text-transform: uppercase;
+  }
