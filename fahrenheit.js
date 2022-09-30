@@ -1,17 +1,12 @@
 "use strict";
-
-window.onload = init;
-
-function init() {   
-    const convertNum = document.getElementById("convertNum");
-    convertNum.onclick = onConvertBtnClicked;
+function refresh() {
+    window.location.reload("Refresh")
 }
-
 function onConvertBtnClicked() {
     const fahrenheitField = document.getElementById("fahrenheitField");
     const messagePara = document.getElementById("messagePara");
     let someNum = Number(fahrenheitField.value);
-    let toCelsius = (5/9) * (someNum - 32);
+    let toCelsius = (5 / 9) * (someNum - 32);
     const answerField = document.getElementById("answerField");
     answerField.value = Math.round(toCelsius);
 
@@ -23,6 +18,9 @@ function onConvertBtnClicked() {
     messagePara.innerHTML = ""
 }
 
-function refresh(){
-    window.location.reload("Refresh")
-  }
+function init() {
+    const convertNum = document.getElementById("convertNum");
+    convertNum.onclick = onConvertBtnClicked;
+}
+
+window.onload = init;
